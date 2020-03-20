@@ -28,7 +28,7 @@ RUN set -x \
 			echo 'quit'; \
 		} > ${STEAMAPPDIR}/hl2dm_update.txt \
 	&& wget -qO- https://mms.alliedmods.net/mmsdrop/1.11/mmsource-1.11.0-git1130-linux.tar.gz | tar xvzf - \
-	&& wget -qO- https://sm.alliedmods.net/smdrop/1.10/sourcemod-1.11.0-git6520-linux.tar.gz | tar xvzf - \
+	&& wget -qO- https://sm.alliedmods.net/smdrop/1.11/sourcemod-1.11.0-git6520-linux.tar.gz | tar xvzf - \
 	&& chown -R steam:steam ${STEAMAPPDIR} \
 	&& apt-get remove --purge -y \
 		wget \

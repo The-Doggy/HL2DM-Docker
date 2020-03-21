@@ -37,7 +37,6 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV SRCDS_PORT=27015 \
-	SRCDS_CLIENT_PORT=27005 \
 	SRCDS_RCONPW="changeme" \
 	SRCDS_PW="changeme" \
 	SRCDS_STARTMAP="dm_runoff"
@@ -51,4 +50,4 @@ VOLUME $STEAMAPPDIR
 ENTRYPOINT ${STEAMAPPDIR}/entry.sh
 
 # Expose ports
-EXPOSE 27015/tcp 27015/udp 27020/udp
+EXPOSE 27015/tcp 27015/udp
